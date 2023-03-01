@@ -12,4 +12,8 @@ public class StepsPage extends AbstractPage {
         super(driver);
         setPageAbsoluteURL("https://www.globalsqa.com/demo-site/sliders/#Steps");
     }
+    @Override
+    public boolean isPageOpened(){
+        return frame.isElementPresent();
+    }
 }

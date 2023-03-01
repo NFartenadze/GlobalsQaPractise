@@ -14,6 +14,12 @@ public class SliderTest implements IAbstractTest {
         ColorPickerPage colorPickerPage = new ColorPickerPage(getDriver());
         colorPickerPage.open();
         Assert.assertTrue(colorPickerPage.isPageOpened(),"Color picker page isn't opened");
+        Assert.assertTrue(colorPickerPage.isColorHandlePresent("red"));
+        colorPickerPage.moveColorHandle("red","left",100);
+        Assert.assertTrue(colorPickerPage.isColorHandlePresent("green"));
+        colorPickerPage.moveColorHandle("green","left",100);
+        Assert.assertTrue(colorPickerPage.isColorHandlePresent("blue"));
+        colorPickerPage.moveColorHandle("blue","right",100);
     }
 
     @Test
@@ -21,6 +27,9 @@ public class SliderTest implements IAbstractTest {
         RangePage rangePage = new RangePage(getDriver());
         rangePage.open();
         Assert.assertTrue(rangePage.isPageOpened(),"Range page isn't opened");
+        Assert.assertTrue(rangePage.isLeftHandlePresent(), "left handle isn't present");
+        Assert.assertTrue(rangePage.isRightHandlePresent(), "right handle isn't present");
+        rangePage.setRange(-50,50);
     }
 
     @Test

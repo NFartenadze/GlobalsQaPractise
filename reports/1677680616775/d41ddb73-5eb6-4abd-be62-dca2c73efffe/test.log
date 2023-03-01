@@ -1,0 +1,69 @@
+[2023-03-01 02:23:37] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-01 02:23:37] [1] [INFO] TEST [project - range] STARTED at [18:23:37 2023-03-01]
+[2023-03-01 02:23:37] [1] [INFO] Starting driver session...
+[2023-03-01 02:23:38] [1] [INFO] Driver session started.
+[2023-03-01 02:23:39] [1] [INFO] INFO: opening url 'https://www.globalsqa.com/demo-site/sliders/#Range'
+[2023-03-01 02:23:44] [1] [ERROR] TEST [project - range] FAILED at [18:23:44 2023-03-01] - move target out of bounds
+  (Session info: chrome=109.0.5414.119)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'nikas-MacBook-Pro.local', ip: 'fe80:0:0:0:10e4:20f5:e557:bc8d%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [7f232e685754b143ec9822c6dd6129b8, actions {actions=[org.openqa.selenium.interactions.Sequence@47fa54d]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/t5/x0mgb2c53hg...}, goog:chromeOptions: {debuggerAddress: localhost:53246}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.100.26:4444/se..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f232e685754b143ec9822c6dd6129b8
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:57)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+org.openqa.selenium.remote.RemoteWebDriver.perform$original$KL3BZEwN(RemoteWebDriver.java:615)
+org.openqa.selenium.remote.RemoteWebDriver.perform$original$KL3BZEwN$accessor$4we2kSGv(RemoteWebDriver.java)
+org.openqa.selenium.remote.RemoteWebDriver$auxiliary$Fezgd6Nm.call(Unknown Source)
+com.zebrunner.agent.core.webdriver.PublicMethodInvocationInterceptor.onPublicMethodInvocation(PublicMethodInvocationInterceptor.java:18)
+org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:247)
+org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:309)
+net.bytebuddy.renamed.java.lang.Object$ByteBuddy$gJlsV5VV.perform(Unknown Source)
+org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+com.solvd.carina.globalsqa.firststep.slider.RangePage.setRange(RangePage.java:43)
+com.solvd.carina.globalsqa.firststep.slider.SliderTest.range(SliderTest.java:30)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:806)
+org.testng.TestRunner.run(TestRunner.java:601)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)

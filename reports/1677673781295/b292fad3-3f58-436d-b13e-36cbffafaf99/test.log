@@ -1,8 +1,0 @@
-[2023-03-01 12:29:42] [1] [WARN] Reporting disabled: using no op test run registrar
-[2023-03-01 12:29:42] [1] [INFO] TEST [project - resizeAccordions] STARTED at [16:29:42 2023-03-01]
-[2023-03-01 12:29:42] [1] [INFO] Starting driver session...
-[2023-03-01 12:29:43] [1] [INFO] Driver session started.
-[2023-03-01 12:29:43] [1] [INFO] INFO: opening url 'https://www.globalsqa.com/demo-site/accordion-and-tabs/#Simple%20Accordion'
-[2023-03-01 12:29:46] [1] [WARN] returned first but found 3 elements by xpath: By.xpath: //ul[@class='resp-tabs-list ']/li
-[2023-03-01 12:29:46] [1] [INFO] PASS: element 'tabs1' is clicked.
-[2023-03-01 12:29:49] [1] [INFO] TEST [project - resizeAccordions] PASSED at [16:29:49 2023-03-01]

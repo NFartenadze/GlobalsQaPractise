@@ -1,0 +1,50 @@
+[2023-03-01 02:21:55] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-01 02:21:55] [1] [INFO] TEST [project - range] STARTED at [18:21:55 2023-03-01]
+[2023-03-01 02:21:55] [1] [INFO] Starting driver session...
+[2023-03-01 02:21:57] [1] [INFO] Driver session started.
+[2023-03-01 02:21:57] [1] [INFO] INFO: opening url 'https://www.globalsqa.com/demo-site/sliders/#Range'
+[2023-03-01 02:22:20] [1] [ERROR] FAIL: get_size - waitCondition for element 'slider (By.xpath: //div[@id='slider-range'])' not satisfied!
+[2023-03-01 02:22:21] [1] [ERROR] TEST [project - range] FAILED at [18:22:21 2023-03-01] - no such element By.xpath: //div[@id='slider-range']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'nikas-MacBook-Pro.local', ip: 'fe80:0:0:0:10e4:20f5:e557:bc8d%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2', java.version: '17.0.6'
+Driver info: driver.version: unknown
+
+com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedElementLocator.findElement(ExtendedElementLocator.java:109)
+org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+jdk.proxy2/jdk.proxy2.$Proxy56.getSize(Unknown Source)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement$3.doGetSize(ExtendedWebElement.java:1535)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.executeAction(ExtendedWebElement.java:1317)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.overrideAction(ExtendedWebElement.java:1422)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1406)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1383)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.getSize(ExtendedWebElement.java:423)
+com.solvd.carina.globalsqa.firststep.slider.RangePage.setRange(RangePage.java:34)
+com.solvd.carina.globalsqa.firststep.slider.SliderTest.range(SliderTest.java:30)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:806)
+org.testng.TestRunner.run(TestRunner.java:601)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
