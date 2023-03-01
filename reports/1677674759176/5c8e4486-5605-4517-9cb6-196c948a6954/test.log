@@ -1,0 +1,6 @@
+[2023-03-01 12:46:00] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-01 12:46:00] [1] [INFO] TEST [project - colorPicker] STARTED at [16:46:00 2023-03-01]
+[2023-03-01 12:46:00] [1] [INFO] Starting driver session...
+[2023-03-01 12:46:01] [1] [INFO] Driver session started.
+[2023-03-01 12:46:01] [1] [INFO] INFO: opening url 'https://www.globalsqa.com/demo-site/sliders/#Color%20Picker'
+[2023-03-01 12:46:05] [1] [INFO] TEST [project - colorPicker] PASSED at [16:46:05 2023-03-01]

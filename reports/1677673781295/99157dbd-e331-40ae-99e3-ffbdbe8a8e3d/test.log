@@ -1,0 +1,73 @@
+[2023-03-01 12:29:49] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-01 12:29:49] [1] [INFO] TEST [project - selectAccordions] STARTED at [16:29:49 2023-03-01]
+[2023-03-01 12:29:49] [1] [INFO] Starting driver session...
+[2023-03-01 12:29:50] [1] [INFO] Driver session started.
+[2023-03-01 12:29:50] [1] [INFO] INFO: opening url 'https://www.globalsqa.com/demo-site/accordion-and-tabs/#Simple%20Accordion'
+[2023-03-01 12:29:53] [1] [ERROR] TEST [project - selectAccordions] FAILED at [16:29:53 2023-03-01] - element not interactable
+  (Session info: chrome=109.0.5414.119)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'nikas-MacBook-Pro.local', ip: 'fe80:0:0:0:10e4:20f5:e557:bc8d%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2', java.version: '17.0.6'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [6cfe8475cbad9b23c5d76d497e7f4eba, clickElement {id=ac4ed7ec-d0f5-4068-bbf1-0e31fdafdb21}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/t5/x0mgb2c53hg...}, goog:chromeOptions: {debuggerAddress: localhost:51271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.100.26:4444/se..., se:cdpVersion: 109.0.5414.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on MAC (6cfe8475cbad9b23c5d76d497e7f4eba)] -> xpath: //div[@id = 'accordion']//h3[contains(text(),'Section 2')]]
+Session ID: 6cfe8475cbad9b23c5d76d497e7f4eba
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringSeleniumCommandExecutor.execute(EventFiringSeleniumCommandExecutor.java:57)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.openqa.selenium.support.decorators.WebDriverDecorator.call(WebDriverDecorator.java:247)
+org.openqa.selenium.support.decorators.DefaultDecorated.call(DefaultDecorated.java:48)
+org.openqa.selenium.support.decorators.WebDriverDecorator.lambda$createProxy$0(WebDriverDecorator.java:309)
+net.bytebuddy.renamed.java.lang.Object$ByteBuddy$5AxycxqH.click(Unknown Source)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement$3.doClick(ExtendedWebElement.java:1428)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.executeAction(ExtendedWebElement.java:1293)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.overrideAction(ExtendedWebElement.java:1422)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1406)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1383)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:460)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:449)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:440)
+com.solvd.carina.globalsqa.firststep.tabs.SimpleAccordionPage.selectSection(SimpleAccordionPage.java:35)
+com.solvd.carina.globalsqa.firststep.tabs.TabsTest.selectAccordions(TabsTest.java:22)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:806)
+org.testng.TestRunner.run(TestRunner.java:601)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)

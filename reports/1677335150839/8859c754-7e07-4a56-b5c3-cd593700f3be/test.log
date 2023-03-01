@@ -1,8 +1,0 @@
-[2023-02-25 02:25:51] [1] [WARN] Reporting disabled: using no op test run registrar
-[2023-02-25 02:25:51] [1] [INFO] TEST [project - selectAccordions] STARTED at [18:25:51 2023-02-25]
-[2023-02-25 02:25:51] [1] [INFO] Starting driver session...
-[2023-02-25 02:25:53] [1] [INFO] Driver session started.
-[2023-02-25 02:25:53] [1] [INFO] INFO: opening url 'https://www.globalsqa.com/demo-site/accordion-and-tabs/#Simple%20Accordion'
-[2023-02-25 02:25:57] [1] [INFO] PASS: element 'section[2]' is clicked.
-[2023-02-25 02:25:58] [1] [INFO] PASS: element 'section[3]' is clicked.
-[2023-02-25 02:25:58] [1] [INFO] TEST [project - selectAccordions] PASSED at [18:25:58 2023-02-25]

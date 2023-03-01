@@ -14,10 +14,17 @@ public class SimpleAccordionPage extends AbstractPage {
     private ExtendedWebElement sectionText;
     @FindBy(xpath = "//div[@id = 'accordion']//h3[contains(text(),'Section %d')]")
     private ExtendedWebElement section;
+
     public SimpleAccordionPage(WebDriver driver) {
         super(driver);
         setPageAbsoluteURL("https://www.globalsqa.com/demo-site/accordion-and-tabs/#Simple%20Accordion");
     }
+    @Override
+    public boolean isPageOpened(){
+        return frame.isElementPresent();
+    }
+
+
 
     public boolean isSectionPresent(int sectionIndex){
         getDriver().switchTo().frame(frame.getElement());
@@ -33,8 +40,6 @@ public class SimpleAccordionPage extends AbstractPage {
     public String getSectionText(int sectionIndex){
         getDriver().switchTo().frame(frame.getElement());
         String result = sectionText.format(sectionIndex).getText();
-        System.out.println("------------------------------");
-        System.out.println(result);
         getDriver().switchTo().defaultContent();
         return result;
     }
