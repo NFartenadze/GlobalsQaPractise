@@ -9,14 +9,13 @@ import org.openqa.selenium.support.FindBy;
 public class RangePage extends AbstractPage {
     @FindBy(xpath = "//iframe[@data-src='../../demoSite/practice/slider/range.html']")
     private ExtendedWebElement frame;
-
     @FindBy(xpath = "//div[@id='slider-range']")
     private ExtendedWebElement slider;
     @FindBy(xpath = "//div[@id='slider-range']/span[1]")
     private ExtendedWebElement leftHandle;
-
     @FindBy(xpath = "//div[@id='slider-range']/span[2]")
     private ExtendedWebElement rightHandle;
+
     public RangePage(WebDriver driver) {
         super(driver);
         setPageAbsoluteURL("https://www.globalsqa.com/demo-site/sliders/#Range");
@@ -29,10 +28,12 @@ public class RangePage extends AbstractPage {
     }
 
     public void setRange(int from, int to){
+        int fromOffSett = (int) (from * 1.368);
+        int toOffSett = (int) (to * 1.368);
         Actions action = new Actions(getDriver());
         getDriver().switchTo().frame(frame.getElement());
-        action.dragAndDropBy(leftHandle.getElement(), from,0).perform();
-        action.dragAndDropBy(rightHandle.getElement(),to,0).perform();
+        action.dragAndDropBy(leftHandle.getElement(), fromOffSett,0).perform();
+        action.dragAndDropBy(rightHandle.getElement(),toOffSett,0).perform();
         getDriver().switchTo().defaultContent();
     }
 

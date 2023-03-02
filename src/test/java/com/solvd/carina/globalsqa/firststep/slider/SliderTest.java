@@ -29,7 +29,7 @@ public class SliderTest implements IAbstractTest {
         Assert.assertTrue(rangePage.isPageOpened(),"Range page isn't opened");
         Assert.assertTrue(rangePage.isLeftHandlePresent(), "left handle isn't present");
         Assert.assertTrue(rangePage.isRightHandlePresent(), "right handle isn't present");
-        rangePage.setRange(-50,50);
+        rangePage.setRange(20,50);
     }
 
     @Test
@@ -37,5 +37,7 @@ public class SliderTest implements IAbstractTest {
         StepsPage stepsPage = new StepsPage(getDriver());
         stepsPage.open();
         Assert.assertTrue(stepsPage.isPageOpened(),"Steps page isn't opened");
+        Assert.assertTrue(stepsPage.isHandlePresent(),"Handle isn't present");
+        stepsPage.increment(5);
     }
 }

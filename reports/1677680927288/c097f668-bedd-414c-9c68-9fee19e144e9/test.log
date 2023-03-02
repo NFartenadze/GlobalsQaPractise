@@ -1,6 +1,0 @@
-[2023-03-01 02:28:48] [1] [WARN] Reporting disabled: using no op test run registrar
-[2023-03-01 02:28:48] [1] [INFO] TEST [project - range] STARTED at [18:28:48 2023-03-01]
-[2023-03-01 02:28:48] [1] [INFO] Starting driver session...
-[2023-03-01 02:28:49] [1] [INFO] Driver session started.
-[2023-03-01 02:28:49] [1] [INFO] INFO: opening url 'https://www.globalsqa.com/demo-site/sliders/#Range'
-[2023-03-01 02:28:54] [1] [INFO] TEST [project - range] PASSED at [18:28:54 2023-03-01]
