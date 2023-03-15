@@ -1,7 +1,7 @@
 package com.solvd.carina.globalsqa.firststep.tabs;
 
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
-import com.solvd.carina.globalsqa.firststep.TabsNavigation;
+import com.solvd.carina.globalsqa.TabsNavigation;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.annotations.Test;

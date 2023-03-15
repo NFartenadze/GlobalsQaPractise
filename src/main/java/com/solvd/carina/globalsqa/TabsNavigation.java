@@ -1,4 +1,4 @@
-package com.solvd.carina.globalsqa.firststep;
+package com.solvd.carina.globalsqa;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
