@@ -51,4 +51,5 @@ public class DownloadManagerPage extends AbstractPage {
         getDriver().switchTo().defaultContent();
         return result;
     }
+
 }
