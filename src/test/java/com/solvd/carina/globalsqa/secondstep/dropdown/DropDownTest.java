@@ -1,12 +1,11 @@
-package com.solvd.carina.globalsqa.secondstep.selectelements;
+package com.solvd.carina.globalsqa.secondstep.dropdown;
 
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
-import com.solvd.carina.globalsqa.secondstep.dropdown.SelectCountryPage;
-import org.apache.ibatis.annotations.Select;
+import groovy.lang.Tuple;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SelectorTest implements IAbstractTest {
+public class DropDownTest implements IAbstractTest {
     @Test
     public void selectDifferentCountries(){
         SelectCountryPage selectCountryPage = new SelectCountryPage(getDriver());
@@ -15,6 +14,7 @@ public class SelectorTest implements IAbstractTest {
         Assert.assertTrue(selectCountryPage.isCountrySelectorPresent(),"country selector isn't present");
         selectCountryPage.selectCountry("Australia");
         Assert.assertEquals(selectCountryPage.getSelectedCountryName(),"Australia");
+        Tuple tuple = new Tuple(1,true,"hello");
     }
 
 }
