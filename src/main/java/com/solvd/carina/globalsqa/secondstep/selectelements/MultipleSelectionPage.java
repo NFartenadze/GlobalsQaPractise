@@ -44,14 +44,14 @@ public class MultipleSelectionPage extends AbstractPage {
     }
 
     public boolean isElementContainerPresent(){
-        getDriver().switchTo().frame(frame.getElement());
+//        getDriver().switchTo().frame(frame.getElement());
         boolean result = elementContainer.isElementPresent();
-        getDriver().switchTo().defaultContent();
+//        getDriver().switchTo().defaultContent();
         return result;
     }
 
     public void selectElements(int from, int to){
-        getDriver().switchTo().frame(frame.getElement());
+//        getDriver().switchTo().frame(frame.getElement());
         Actions actions = new Actions(getDriver());
         actions.clickAndHold(elements.get(from-1).getElement())
                 .moveToElement(elements.get(to-1).getElement())
